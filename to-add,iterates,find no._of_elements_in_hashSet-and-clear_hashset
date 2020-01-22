@@ -1,0 +1,26 @@
+import java.util.HashSet;
+  class Example 
+{
+   public static void main(String args[])
+   {
+     
+      HashSet<String> h = new HashSet<String>();
+
+      // Adding student names to the HashSet
+      h.add("rohit");
+      h.add("virat");
+      h.add("dhoni");
+      h.add("bumrah");
+     //Iterating 
+     for(String str:h)
+     {
+         System.out.println(str);
+     }
+     //COUNTING ELEMENTS
+     System.out.println("number of elements in given hashset is:"+h.size());
+     //Clearing all elements in hashset
+     h.clear();
+      System.out.println("after clearing hashset becomes:");
+       System.out.println(h);
+   }
+}
