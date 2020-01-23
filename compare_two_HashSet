@@ -1,0 +1,22 @@
+import java.util.*;
+class HashSetToArrayList{ 
+  public static void main(String[] args) {
+    
+     HashSet<String> hset1 = new HashSet<String>();
+     hset1.add("ram");
+     hset1.add("shyam");
+     hset1.add("Govind");
+     hset1.add("sourav");
+    System.out.println("HashSet contains: "+ hset1);
+ 
+     HashSet<String> hset2 = new HashSet<String>();
+     hset2.add("ram");
+     hset2.add("sourav");
+     hset2.add("Govind");
+     hset2.add("ram");
+    System.out.println("HashSet contains: "+ hset2);
+     
+     boolean value=hset1.equals(hset2);
+     System.out.println("both are equal?"+value);
+  }
+}
