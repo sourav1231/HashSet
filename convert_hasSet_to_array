@@ -1,0 +1,22 @@
+import java.util.*;
+class HashSetToArrayList{ 
+  public static void main(String[] args) {
+    
+     HashSet<String> hset = new HashSet<String>();
+     hset.add("ram");
+     hset.add("shyam");
+     hset.add("Govind");
+     hset.add("sourav");
+    System.out.println("HashSet contains: "+ hset);
+ 
+     // Creating an array of HashSet elements
+     Object[] array=hset.toArray();
+    
+     // Displaying Array elements
+     System.out.println("the array is:");
+     for(Object str:array)
+     {
+         System.out.println(str);
+     }
+  }
+}
