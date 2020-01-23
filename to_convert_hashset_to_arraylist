@@ -1,0 +1,18 @@
+import java.util.*;
+class HashSetToArrayList{ 
+  public static void main(String[] args) {
+    
+     HashSet<String> hset = new HashSet<String>();
+     hset.add("ram");
+     hset.add("shyam");
+     hset.add("Govind");
+     hset.add("sourav");
+    System.out.println("HashSet contains: "+ hset);
+ 
+     // Creating a List of HashSet elements
+     ArrayList<String> list = new ArrayList<String>(hset);
+ 
+     // Displaying ArrayList elements
+     System.out.println("ArrayList contains: "+ list);
+  }
+}
